@@ -21,6 +21,7 @@ namespace TranslatorApp
             {
                 MessageBox.Show("Error");
             }
+            BtnTranslate.Enabled = false;
             //string[] Test = translator.SplitTextToSentences();
             //textBox2.Text = string.Join(Environment.NewLine, Test);
 
@@ -30,6 +31,7 @@ namespace TranslatorApp
         {
             textBox1.Clear();
             textBox2.Clear();
+            BtnTranslate.Enabled = true;
         }
     }
 }
