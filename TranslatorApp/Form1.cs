@@ -9,6 +9,7 @@ namespace TranslatorApp
 
         private async void BtnTranslate_Click(object sender, EventArgs e)
         {
+            BtnTranslate.Enabled = false;
             Translator translator = new Translator(textBox1.Text);
 
             string[] Results = await translator.Translate();
@@ -21,7 +22,7 @@ namespace TranslatorApp
             {
                 MessageBox.Show("Error");
             }
-            BtnTranslate.Enabled = false;
+
             //string[] Test = translator.SplitTextToSentences();
             //textBox2.Text = string.Join(Environment.NewLine, Test);
 
