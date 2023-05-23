@@ -129,7 +129,7 @@ namespace TranslatorApp
 
         private void ReplaceText(ref string text)
         {
-            text = text.Replace("الله", "");
+            text = text.Replace("الله", ""); // Bycouse Used To translate Novels
         }
 
         public async Task<string[]> Translate()
