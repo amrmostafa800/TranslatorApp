@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TranslatorApp": {
+      "commandName": "Project",
+      "nativeDebugging": false
+    }
+  }
+}
